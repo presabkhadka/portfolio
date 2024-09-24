@@ -1,12 +1,24 @@
-import { FaMobile } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { P, PBold } from "./styledComponents";
 
 const data = [
-  { title: "Phone", value: 9843440345, icon: <FaMobile /> },
-  { title: "Email", value: "presabkhadka30@gmail.com", icon: <MdEmail /> },
-  { title: "Location", value: "Itahari, Nepal", icon: <FaLocationDot /> },
+  {
+    title: "Phone",
+    value: 9843440345,
+    icon: <FaMobileAlt className="text-orange-500 text-2xl" />,
+  },
+  {
+    title: "Email",
+    value: "presabkhadka30@gmail.com",
+    icon: <MdEmail className="text-orange-500 text-2xl" />,
+  },
+  {
+    title: "Location",
+    value: "Itahari, Nepal",
+    icon: <FaLocationDot className="text-orange-500 text-2xl" />,
+  },
 ];
 
 export default function Contact() {

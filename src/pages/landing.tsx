@@ -1,12 +1,11 @@
 import { H4, SmallText } from "../components/styledComponents";
 import Navbar from "../components/navbar";
 import Contact from "../components/contact";
-import { Button } from "../components/ui/button";
 import Body from "../components/body";
 
 function Landing() {
   return (
-    <div className="grid grid-cols-12 auto-rows-auto gap-4 px-6 ">
+    <div className="grid grid-cols-12 auto-rows-min gap-4 px-6 h-screen">
       <div className="col-span-full">
         <Navbar />
       </div>

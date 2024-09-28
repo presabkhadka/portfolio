@@ -150,7 +150,7 @@ export default function Body() {
             className="w-full py-6 px-12 flex flex-col gap-4"
           >
             <H2 className="border-orange-500 border-b-2 w-fit">WORK</H2>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-6 gap-4">
               <div className="col-span-2 border-2 rounded-lg flex flex-col gap-2 overflow-hidden">
                 <img
                   src="../../src/assets/ims.png"
@@ -164,7 +164,7 @@ export default function Body() {
                   <P className="text-center">TypeScript, React, Tailwind</P>
                 </div>
               </div>
-              <div className="col-span-2 border-2 rounded-lg flex flex-col gap-2 overflow-hidden ">
+              <div className="col-span-2 border-2 rounded-lg flex flex-col gap-2 overflow-hidden">
                 <img
                   src="../../src/assets/bookstore.jpg"
                   alt="ims"
@@ -172,9 +172,22 @@ export default function Body() {
                 />
                 <div className="p-2 flex flex-col gap-2">
                   <PBold className="text-center">
-                    Book Store Admin Pannel CRUD
+                    Book Store CRUD
                   </PBold>
                   <P className="text-center">TypeScript, React, Tailwind</P>
+                </div>
+              </div>
+              <div className="col-span-2 border-2 rounded-lg flex flex-col gap-2 overflow-hidden">
+                <img
+                  src="../../src/assets/rtc.png"
+                  alt="ims"
+                  className="w-full aspect-video"
+                />
+                <div className="p-2 flex flex-col gap-2">
+                  <PBold className="text-center">
+                    Real Time Screenshare
+                  </PBold>
+                  <P className="text-center">TypeScript, React, Tailwind, PeerJS, WebRTC, Socket.io</P>
                 </div>
               </div>
             </div>
@@ -182,7 +195,10 @@ export default function Body() {
         )}
 
         {activeTab === "contact" && (
-          <TabsContent value="contact" className="w-full py-6 px-12">
+          <TabsContent
+            value="contact"
+            className="w-full py-6 px-12 flex flex-col gap-2"
+          >
             <H2 className="border-orange-500 border-b-2 w-fit">CONTACT</H2>
           </TabsContent>
         )}
